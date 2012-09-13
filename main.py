@@ -428,7 +428,7 @@ class Edit(MainHandler):
 
 
 app = webapp2.WSGIApplication([('/', MainHandler),
-			       			   ('/blog', BlogHandler), 
+                               ('/blog', BlogHandler), 
                    			   ('/blog/newpost', NewHandler),
                    			   ('/blog/(\d+)', PermHandler),
                                ('/wiki/signup', SignUpHandler),
