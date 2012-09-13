@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Yoav Zimmerman</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+</head>
+
+<body bgcolor="#FAF0E6">
+<form action="/"><button type="submit">Home</button></form>
+<div class="web-title">Yoav Zimmerman</div>
+<h2> Signup </h2>
+
+<div class="hr"><hr></div>
+
+<div style="float:right">
+	<form action='/whyhours'>
+		<button type="submit">Why should I make an account for this site...?</button>
+	</form>
+</div>
+
+	<form method="POST">
+	
+	<table>
+
+	<tr>
+		<td>Username</td> 
+		<td><input type="text" name="username" value="{{username}}" class="signup"></td>
+		<td><div class="error">{{user_error}} </div></td>
+	</tr>
+
+	<tr>
+		<td>Password</td> 
+		<td><input type="password" name="password" value="{{password}}" class="signup"></td>
+		<td><div class="error">{{pass_error}} </div></td>
+	</tr>
+
+	<tr>
+		<td>Verify Password</td> 
+		<td><input type="password" name="verify" value="{{verify}}" class="signup"></td>
+		<td><div class="error">{{ver_error}} </div></td>
+	</tr>
+
+	<tr>
+		<td>Email</td> 
+		<td><input type="text" name="email" value="{{email}}" class="signup"></td>
+		<td><div class="error">{{email_error}} </div></td>
+	</tr>
+
+	</table>
+	<input type="submit">
+	</form>
+
+</body>
+</html>

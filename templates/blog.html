@@ -1,0 +1,36 @@
+<html>
+<head>
+    <title>Yoav's Personal Wall</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+</head>
+
+
+
+<body> 
+    <form action="/"><button type="submit">Home</button></form>
+
+    <div class="main-title"><a href="/blog" class="title">Yoav's Personal Wall </a></div>
+
+    <div class="login-area">
+        {{logged_msg|safe}}
+    </div>
+
+    <div class="barney">
+	Write things you want to write.
+    </div>
+    
+    <form action="/blog/newpost"><div class="centerbutton"><button type="submit">Contribute!</button></div></form>
+    {% for p in posts %}
+        <div class="post">
+        <div class="post-heading">  
+	       <div class="post-title"> {{p.name}} </div>
+	       <div class="post-date"> {{p.date.strftime("%B %d, %Y")}} | <a href="/blog/{{p.key().id()}}" class="permalink">permalink</a></div>
+        </div>   
+	    <div class="post-content"> {{p.content}} </div>
+	</div>
+	<br><br>
+    {% endfor %}
+    <div class="query">Queried {{query}} seconds ago</div>
+</body>
+
+</html>

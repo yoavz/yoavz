@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Yoav's Personal Wall</title>
+    <link type="text/css" rel="stylesheet" href="/stylesheets/main.css" />
+</head>
+
+<body> 
+    <form action="/"><button type="submit">Home</button></form>
+    <form method="POST">
+    <div class="main-title"><a href="/blog" class="title">Yoav's Personal Wall </a></div>
+
+    <div class="login-area">
+        {{logged_msg|safe}}
+    </div>
+    
+    <div class="center">
+    <label>Name<br>
+        <input type="text" name="subject" value="{{name}}"></label>
+    <label>Content<br>
+        <textarea name="content">{{content}}</textarea></label>
+    <input type="submit">
+	<br> <div class="error">{{error}}</div>
+    </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+body {
+    position: relative;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    color: #333;
+}
+
+.title {
+	text-align: center;
+	font-size: 60px;
+	font-family: sans-serif;
+	padding:10px;
+}
+
+.login_area {
+	position:absolute;
+	top:10px;
+	right:10px;
+	color:gray;
+	font-size:20px;
+}
+
+.edit_area {
+	position:absolute;
+	top:10px;
+	left:10px;
+	color:gray;
+	font-size:20px;
+}
+
+.content_area {
+	font-size:14px;
+}
+
+a {
+	text-decoration:none;
+	color:gray;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a:active {
+	text-decoration:underline;
+}
+
+textarea {
+  width: 1000px;
+  height: 400px;
+  font-size: 17px;
+}
+
+input[type=submit] {
+  font-size: 24px;
+}
