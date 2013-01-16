@@ -1,7 +1,11 @@
-This is a website built using google app engine for Udacity course CS253.
+This is a website built using google app engine with the help of Udacity course CS253. 
+I created it to learn and improve with python / google app engine / SQL.
 
-It includes a guestbook (pretty much a blog) and a wiki.
+Subprojects within this website include:
 
-This is the first project I have uploaded to github and first time using git.
+1) Personal Wall - A wall you can post comments to
+2) Z-Wiki - A wiki site where any user can create or edit any page
+3) Register / Login system complete with password hashing
+4) 4chan Image Aggregator - Pulls images from various 4chan boards and displays them side by side
 
 -Yoav Zimmerman
